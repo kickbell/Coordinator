@@ -13,7 +13,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    func push() {
+        let b = BViewController()
+        b.seletedIndex = 0
+        self.navigationController?.pushViewController(b, animated: true)
+    }
 
 
 }
 
+
+class BViewController: UIViewController {
+    var seletedIndex: Int = 0
+}
