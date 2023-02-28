@@ -7,23 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = .yellow
     }
     
-    func push() {
-        let b = BViewController()
-        b.seletedIndex = 0
-        self.navigationController?.pushViewController(b, animated: true)
-    }
+    
 
 
 }
 
-
-class BViewController: UIViewController {
-    var seletedIndex: Int = 0
-}
