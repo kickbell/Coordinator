@@ -18,6 +18,7 @@
 		A81BFF4D29AE457800C9A57E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BFF4C29AE457800C9A57E /* MainCoordinator.swift */; };
 		A81BFF4F29AE477100C9A57E /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BFF4E29AE477100C9A57E /* BuyViewController.swift */; };
 		A81BFF5129AE477B00C9A57E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BFF5029AE477B00C9A57E /* CreateAccountViewController.swift */; };
+		A81BFF5729AE685700C9A57E /* BuyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BFF5629AE685700C9A57E /* BuyCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A81BFF4C29AE457800C9A57E /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		A81BFF4E29AE477100C9A57E /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		A81BFF5029AE477B00C9A57E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		A81BFF5629AE685700C9A57E /* BuyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,20 +68,53 @@
 		A81BFF3329AE272000C9A57E /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				A81BFF3429AE272000C9A57E /* AppDelegate.swift */,
-				A81BFF3629AE272000C9A57E /* SceneDelegate.swift */,
-				A81BFF4829AE444D00C9A57E /* Coordinator.swift */,
-				A81BFF4A29AE44B700C9A57E /* Storyboarded.swift */,
-				A81BFF4C29AE457800C9A57E /* MainCoordinator.swift */,
-				A81BFF3829AE272000C9A57E /* ViewController.swift */,
-				A81BFF4E29AE477100C9A57E /* BuyViewController.swift */,
-				A81BFF5029AE477B00C9A57E /* CreateAccountViewController.swift */,
+				A81BFF5229AE680D00C9A57E /* App Delegates */,
+				A81BFF5329AE681800C9A57E /* Protocols */,
+				A81BFF5429AE681F00C9A57E /* Coordinators */,
+				A81BFF5529AE682600C9A57E /* ViewControllers */,
 				A81BFF3A29AE272000C9A57E /* Main.storyboard */,
 				A81BFF3D29AE272200C9A57E /* Assets.xcassets */,
 				A81BFF3F29AE272200C9A57E /* LaunchScreen.storyboard */,
 				A81BFF4229AE272200C9A57E /* Info.plist */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A81BFF5229AE680D00C9A57E /* App Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				A81BFF3429AE272000C9A57E /* AppDelegate.swift */,
+				A81BFF3629AE272000C9A57E /* SceneDelegate.swift */,
+			);
+			path = "App Delegates";
+			sourceTree = "<group>";
+		};
+		A81BFF5329AE681800C9A57E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A81BFF4829AE444D00C9A57E /* Coordinator.swift */,
+				A81BFF4A29AE44B700C9A57E /* Storyboarded.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A81BFF5429AE681F00C9A57E /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				A81BFF4C29AE457800C9A57E /* MainCoordinator.swift */,
+				A81BFF5629AE685700C9A57E /* BuyCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		A81BFF5529AE682600C9A57E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A81BFF3829AE272000C9A57E /* ViewController.swift */,
+				A81BFF4E29AE477100C9A57E /* BuyViewController.swift */,
+				A81BFF5029AE477B00C9A57E /* CreateAccountViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81BFF5729AE685700C9A57E /* BuyCoordinator.swift in Sources */,
 				A81BFF4929AE444D00C9A57E /* Coordinator.swift in Sources */,
 				A81BFF4D29AE457800C9A57E /* MainCoordinator.swift in Sources */,
 				A81BFF3929AE272000C9A57E /* ViewController.swift in Sources */,
