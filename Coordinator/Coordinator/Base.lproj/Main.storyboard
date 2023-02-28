@@ -15,13 +15,91 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEH-gQ-Igy">
+                                <rect key="frame" x="50" y="94" width="49" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Buy"/>
+                                <connections>
+                                    <action selector="buyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HBq-KS-UTq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLA-sW-z16">
+                                <rect key="frame" x="50" y="145" width="121" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CreateAccount"/>
+                                <connections>
+                                    <action selector="createAccountTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xha-u9-QtD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eEH-gQ-Igy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Gba-Tz-MpA"/>
+                            <constraint firstItem="VLA-sW-z16" firstAttribute="top" secondItem="eEH-gQ-Igy" secondAttribute="bottom" constant="20" id="Ujp-yN-Vxx"/>
+                            <constraint firstItem="VLA-sW-z16" firstAttribute="leading" secondItem="eEH-gQ-Igy" secondAttribute="leading" id="iik-5V-OyV"/>
+                            <constraint firstItem="eEH-gQ-Igy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="t1Z-B6-j9P"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-7" y="40"/>
+        </scene>
+        <!--Buy View Controller-->
+        <scene sceneID="i1V-Me-ZTk">
+            <objects>
+                <viewController storyboardIdentifier="BuyViewController" id="EFJ-82-FeT" customClass="BuyViewController" customModule="Coordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zgg-C4-opF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BuyViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2r-0L-eHf">
+                                <rect key="frame" x="50" y="94" width="141" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7fR-KG-I70"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X2r-0L-eHf" firstAttribute="leading" secondItem="7fR-KG-I70" secondAttribute="leading" constant="50" id="Pbi-j4-VCA"/>
+                            <constraint firstItem="X2r-0L-eHf" firstAttribute="top" secondItem="7fR-KG-I70" secondAttribute="top" constant="50" id="QQj-EX-Rjj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wUb-DA-GYV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="40"/>
+        </scene>
+        <!--Create Account View Controller-->
+        <scene sceneID="uhl-Vv-Oxr">
+            <objects>
+                <viewController storyboardIdentifier="CreateAccountViewController" id="hOt-EX-fG1" customClass="CreateAccountViewController" customModule="Coordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YXY-K2-L8K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CreateAccountViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPM-nf-Vy4">
+                                <rect key="frame" x="50" y="94" width="226" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="noB-Ys-uCd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hPM-nf-Vy4" firstAttribute="leading" secondItem="noB-Ys-uCd" secondAttribute="leading" constant="50" id="ByY-l4-B1l"/>
+                            <constraint firstItem="hPM-nf-Vy4" firstAttribute="top" secondItem="noB-Ys-uCd" secondAttribute="top" constant="50" id="TLg-mr-RFl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zQM-Zw-o07" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1349" y="40"/>
         </scene>
     </scenes>
     <resources>
