@@ -20,6 +20,9 @@
 		A81BFF5129AE477B00C9A57E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BFF5029AE477B00C9A57E /* CreateAccountViewController.swift */; };
 		A81BFF5729AE685700C9A57E /* BuyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BFF5629AE685700C9A57E /* BuyCoordinator.swift */; };
 		A81BFF5929AE6A4400C9A57E /* CreateAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BFF5829AE6A4400C9A57E /* CreateAccountCoordinator.swift */; };
+		A81BFF5B29AFB79700C9A57E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BFF5A29AFB79700C9A57E /* MainTabBarController.swift */; };
+		A81BFF5D29AFC8C600C9A57E /* Buying.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BFF5C29AFC8C600C9A57E /* Buying.swift */; };
+		A81BFF5F29AFC8F000C9A57E /* AccountCreating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81BFF5E29AFC8F000C9A57E /* AccountCreating.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		A81BFF5029AE477B00C9A57E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		A81BFF5629AE685700C9A57E /* BuyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCoordinator.swift; sourceTree = "<group>"; };
 		A81BFF5829AE6A4400C9A57E /* CreateAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountCoordinator.swift; sourceTree = "<group>"; };
+		A81BFF5A29AFB79700C9A57E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		A81BFF5C29AFC8C600C9A57E /* Buying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buying.swift; sourceTree = "<group>"; };
+		A81BFF5E29AFC8F000C9A57E /* AccountCreating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreating.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,8 @@
 			children = (
 				A81BFF4829AE444D00C9A57E /* Coordinator.swift */,
 				A81BFF4A29AE44B700C9A57E /* Storyboarded.swift */,
+				A81BFF5C29AFC8C600C9A57E /* Buying.swift */,
+				A81BFF5E29AFC8F000C9A57E /* AccountCreating.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -113,6 +121,7 @@
 		A81BFF5529AE682600C9A57E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A81BFF5A29AFB79700C9A57E /* MainTabBarController.swift */,
 				A81BFF3829AE272000C9A57E /* ViewController.swift */,
 				A81BFF4E29AE477100C9A57E /* BuyViewController.swift */,
 				A81BFF5029AE477B00C9A57E /* CreateAccountViewController.swift */,
@@ -193,14 +202,17 @@
 			files = (
 				A81BFF5729AE685700C9A57E /* BuyCoordinator.swift in Sources */,
 				A81BFF4929AE444D00C9A57E /* Coordinator.swift in Sources */,
+				A81BFF5B29AFB79700C9A57E /* MainTabBarController.swift in Sources */,
 				A81BFF4D29AE457800C9A57E /* MainCoordinator.swift in Sources */,
 				A81BFF3929AE272000C9A57E /* ViewController.swift in Sources */,
+				A81BFF5D29AFC8C600C9A57E /* Buying.swift in Sources */,
 				A81BFF4B29AE44B700C9A57E /* Storyboarded.swift in Sources */,
 				A81BFF5129AE477B00C9A57E /* CreateAccountViewController.swift in Sources */,
 				A81BFF5929AE6A4400C9A57E /* CreateAccountCoordinator.swift in Sources */,
 				A81BFF3529AE272000C9A57E /* AppDelegate.swift in Sources */,
 				A81BFF4F29AE477100C9A57E /* BuyViewController.swift in Sources */,
 				A81BFF3729AE272000C9A57E /* SceneDelegate.swift in Sources */,
+				A81BFF5F29AFC8F000C9A57E /* AccountCreating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

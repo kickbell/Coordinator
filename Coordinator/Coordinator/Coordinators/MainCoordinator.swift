@@ -8,12 +8,8 @@
 import Foundation
 import UIKit
 
-class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
-    var childCoordinators: [Coordinator] = []{
-        didSet{
-            print(childCoordinators)
-        }
-    }
+class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate, Buying, AccountCreating {
+    var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -23,7 +19,15 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     func start() {
         navigationController.delegate = self
         let vc = ViewController.instantiate()
-        vc.coordinator = self
+        vc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+        vc.buyAction = { [weak self] productType in
+            self?.buySubscription(productType)
+        }
+        
+        vc.createAccountAction = { [weak self] in
+            self?.createAccount()
+        }
+//        vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
     

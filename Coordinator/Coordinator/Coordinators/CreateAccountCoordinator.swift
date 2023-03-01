@@ -18,6 +18,7 @@ class CreateAccountCoordinator: Coordinator {
     
     func start() {
         let vc = CreateAccountViewController.instantiate()
+        vc.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 2)
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
