@@ -15,8 +15,10 @@ class ViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
     }
     
+    @IBOutlet weak var product: UISegmentedControl!
+    
     @IBAction func buyTapped(_ sender: Any) {
-        coordinator?.buySubscription()
+        coordinator?.buySubscription(product.selectedSegmentIndex)
     }
     
     @IBAction func createAccountTapped(_ sender: Any) {
