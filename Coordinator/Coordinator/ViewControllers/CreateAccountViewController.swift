@@ -9,6 +9,8 @@ import UIKit
 
 class CreateAccountViewController: UIViewController, Storyboarded {
     
+    weak var coordinator: CreateAccountCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

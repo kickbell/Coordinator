@@ -13,6 +13,8 @@ class ViewController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        product.setTitle("컴퓨터", forSegmentAt: 0)
+        product.setTitle("자전거", forSegmentAt: 1)
     }
     
     @IBOutlet weak var product: UISegmentedControl!

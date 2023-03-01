@@ -32,16 +32,28 @@
                                     <action selector="createAccountTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xha-u9-QtD"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sZ6-Co-zHH">
+                                <rect key="frame" x="141.5" y="432.5" width="131" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eEH-gQ-Igy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Gba-Tz-MpA"/>
                             <constraint firstItem="VLA-sW-z16" firstAttribute="top" secondItem="eEH-gQ-Igy" secondAttribute="bottom" constant="20" id="Ujp-yN-Vxx"/>
+                            <constraint firstItem="sZ6-Co-zHH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wre-Y5-5QU"/>
+                            <constraint firstItem="sZ6-Co-zHH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dn9-rl-CSd"/>
                             <constraint firstItem="VLA-sW-z16" firstAttribute="leading" secondItem="eEH-gQ-Igy" secondAttribute="leading" id="iik-5V-OyV"/>
                             <constraint firstItem="eEH-gQ-Igy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="t1Z-B6-j9P"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="product" destination="sZ6-Co-zHH" id="UEn-ah-OMO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

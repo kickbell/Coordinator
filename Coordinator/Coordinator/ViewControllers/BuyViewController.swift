@@ -16,5 +16,10 @@ class BuyViewController: UIViewController, Storyboarded {
 //        super.viewDidDisappear(animated)
 //        coordinator?.didFinishBuying()
 //    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("selectedProduct: \(selectedProduct)")
+    }
 
 }

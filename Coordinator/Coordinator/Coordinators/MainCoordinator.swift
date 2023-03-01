@@ -9,7 +9,11 @@ import Foundation
 import UIKit
 
 class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
-    var childCoordinators: [Coordinator] = []
+    var childCoordinators: [Coordinator] = []{
+        didSet{
+            print(childCoordinators)
+        }
+    }
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -45,22 +49,25 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     }
     
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        
-        
         guard let fromViewController = navigationController.transitionCoordinator?.viewController(forKey: .from) else {
             return
         }
         
-        print(navigationController.viewControllers)
-        print(String(describing: viewController), "vvv", String(describing: fromViewController))
-        print("")
-        
         if navigationController.viewControllers.contains(fromViewController) {
             return
         }
+
+//        if let buyViewController = fromViewController as? BuyViewController {
+//            childDidFinish(buyViewController.coordinator)
+//        }
         
-        if let buyViewController = fromViewController as? BuyViewController {
-            childDidFinish(buyViewController.coordinator)
+        switch fromViewController {
+        case let vc as BuyViewController: childDidFinish(vc.coordinator)
+        case let vc as CreateAccountViewController: childDidFinish(vc.coordinator)
+        default:
+            break
         }
+        
+
     }
 }
